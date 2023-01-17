@@ -1,0 +1,17 @@
+
+#Id and Ship
+
+t=int(input())
+ship_class=[]
+for num in range(t):
+    class_id=input()
+    if class_id=='b' or class_id=='B':
+        ship_class.append("BattleShip")
+    elif class_id=='c' or class_id=='C':
+        ship_class.append("Cruiser")
+    elif class_id=='D' or class_id=='d':
+        ship_class.append("Destroyer")
+    elif class_id=='F' or class_id=='f':
+        ship_class.append("Frigate")
+for i in ship_class:
+    print(i)
